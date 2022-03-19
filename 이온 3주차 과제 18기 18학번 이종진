@@ -10,7 +10,7 @@ void main()
 	printf("6개의 숫자 입력.\n");
 	for (int i = 0; i < 6; i++)
 	{
-		scanf("%d", &num[i]);
+		scanf("%d,", &num[i]);
 	};
 	isum = arr(num, sizeof(num) / sizeof(int));
 	printf("\n숫자 6개의 합 %d", isum);
