@@ -1,0 +1,28 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int arr(int count[], int icount);
+
+void main()
+{
+	int isum;
+	int num[6] = { 0 };
+	printf("6개의 숫자 입력.\n");
+	for (int i = 0; i < 6; i++)
+	{
+		scanf("%d", &num[i]);
+	};
+	isum = arr(num, sizeof(num) / sizeof(int));
+	printf("\n숫자 6개의 합 %d", isum);
+}
+
+int arr(int count[], int icount)
+{
+	int sum = 0;
+	for (int i = 0; i < icount; i++)
+	{
+		sum += count[i];
+	};
+
+	return sum;
+}
